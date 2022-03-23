@@ -1,5 +1,5 @@
 # MindX
-" An extension for your mind
+" An extension for your mind "
 
 TBD
 - [x] Article Tagging
