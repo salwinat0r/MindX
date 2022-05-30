@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/mindxlogo2.png" height="400px"><br>
+<p align="center"><img src="assets/mindxlogo.png" height="400px"><br>
 
 # MindX
 
