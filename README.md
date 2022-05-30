@@ -1,7 +1,7 @@
 # MindX
 > An extension for your mind
 
-TBD
+Roadmap
 - [x] Article Tagging
 - [ ] ImageNet Classifiier
 - [ ] OCR text through tagger
