@@ -20,6 +20,3 @@ def getTags(url):
     stop_words = set(nltk.corpus.stopwords.words('english'))
     tags = [tag for tag in tags if tag not in stop_words]
     return tags
-
-url = input("Enter article URL: ")
-print(getTags(url))
