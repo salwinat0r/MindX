@@ -28,17 +28,31 @@ def TwitterParse(id):
     # fetching the text attribute
     text = status.full_text
     tokens = set(word_tokenize(text))
-    tokens = pos_tag(tokens)
+    tokens = nltk.pos_tag(tokens)
     # check for nouns in the token list
     tagged_tok=[]
     for i in range(len(tokens)):
-        if tokens[i][1]=="NNP" or tokens[i][1]=="NNS" or tokens[i][1]=="NN":
+        if tokens[i][1]=="NNP" or tokens[i][1]=="NNS" or tokens[i][1]=="NN" or tokens[i][1]=="NN-TL-HL":
             tagged_tok.append(tokens[i][0])
-    
+    # remove special characters
+    for i in range(len(tagged_tok)):
+        tagged_tok[i] = tagged_tok[i].replace("[", "")
+        tagged_tok[i] = tagged_tok[i].replace("]", "")
+        tagged_tok[i] = tagged_tok[i].replace("https", "")
+        tagged_tok[i] = tagged_tok[i].replace("”", "")
+        tagged_tok[i] = tagged_tok[i].replace("“", "")
+        tagged_tok[i] = tagged_tok[i].replace("@", "")
+
+    tagged_tok = [i for i in tagged_tok if i]
+    for i in tagged_tok:
+        if i.startswith("//"):
+            tagged_tok.remove(i)
+
     # remove stop words
     stop_words = set(nltk.corpus.stopwords.words('english'))
     tokens = [word for word in tagged_tok if word not in stop_words]
     return tagged_tok
 
-id= '1535569677971345409'
+id= '1535712249687560192'
 print(TwitterParse(id))
+
