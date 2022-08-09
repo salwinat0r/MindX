@@ -52,7 +52,3 @@ def TwitterParse(id):
     stop_words = set(nltk.corpus.stopwords.words('english'))
     tokens = [word for word in tagged_tok if word not in stop_words]
     return tagged_tok
-
-id= '1535712249687560192'
-print(TwitterParse(id))
-

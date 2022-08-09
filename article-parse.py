@@ -2,7 +2,6 @@ from newspaper import Article
 import nltk
 nltk.download('stopwords')
 
-#chumma test
 def getTags(url):
     # parsing the article
     article = Article(url)
