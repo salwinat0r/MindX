@@ -33,4 +33,3 @@ def getColor(image, number_of_colors):
     rgb_colors = [ordered_colors[i] for i in counts.keys()]
 
     return rgb_colors, hex_colors
-print(getColor(image, 5))
