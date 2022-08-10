@@ -7,7 +7,7 @@
 Roadmap 🛣️
 - [x] Article Tagging
 - [x] ImageNet Classifiier
-- [ ] OCR text through tagger
+- [ ] OCR
 - [x] Tweet tagging
 - [x] Color Classifier (name of color and hex)
 - [ ] Slick UI

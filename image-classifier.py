@@ -18,7 +18,7 @@ def prepare_image(file):
 def predict():
     preprocessed_image = prepare_image('/home/salwynm/phone.jpeg')
     predictions = mobilenet.predict(preprocessed_image)
-    result = imagenet_utils.decode_predictions(predictions, 5)[0]
+    result = imagenet_utils.decode_predictions(predictions, 3)[0]
 
     responses = []
     for i, res in enumerate(result):
