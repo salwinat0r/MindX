@@ -4,10 +4,13 @@
 
 > An extension for your mind
 
+MindX is an idea capturing tool that uses AI to auto tag any kind of bookmarks that you may have.
+
+
 TODO
 
 - [x] Article Tagging
-- [x] ImageNet Classifiier
+- [x] ImageNet Classifier
 - [ ] OCR
 - [x] Tweet tagging
 - [x] Color Classifier (name of color and hex)
