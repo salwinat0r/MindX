@@ -5,18 +5,18 @@ import PIL
 import PIL.Image
 from keras.applications import imagenet_utils
 
-mobilenet = tf.keras.applications.MobileNetV2(weights='imagenet')
+mobilenet = tf.keras.applications.ResNet50(weights='imagenet')
 
 def prepare_image(file):
     img_path = ''
     img = tf.keras.utils.load_img(img_path + file, target_size=(224, 224))
     img_array = tf.keras.utils.img_to_array(img)
     img_array_expanded_dims = np.expand_dims(img_array, axis=0)
-    return tf.keras.applications.mobilenet.preprocess_input(img_array_expanded_dims)
+    return tf.keras.applications.resnet50.preprocess_input(img_array_expanded_dims)
 
 
 def predict():
-    preprocessed_image = prepare_image('/home/salwynm/phone.jpeg')
+    preprocessed_image = prepare_image('/home/salwynm/ocean.jpg')
     predictions = mobilenet.predict(preprocessed_image)
     result = imagenet_utils.decode_predictions(predictions, 3)[0]
 

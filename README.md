@@ -4,7 +4,8 @@
 
 > An extension for your mind
 
-Roadmap 🛣️
+TODO
+
 - [x] Article Tagging
 - [x] ImageNet Classifiier
 - [ ] OCR
