@@ -6,7 +6,7 @@
 
 Roadmap 🛣️
 - [x] Article Tagging
-- [ ] ImageNet Classifiier
+- [x] ImageNet Classifiier
 - [ ] OCR text through tagger
 - [x] Tweet tagging
 - [x] Color Classifier (name of color and hex)
