@@ -10,7 +10,6 @@ TODO
 
 - [x] Article Tagging
 - [x] ImageNet Classifier
-- [ ] OCR
 - [x] Tweet tagging
 - [x] Color Classifier (name of color and hex)
 - [ ] Slick UI
