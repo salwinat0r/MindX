@@ -4,8 +4,7 @@
 
 > An extension for your mind
 
-MindX is an idea capturing tool that uses AI to auto tag any kind of bookmarks that you may have.
-
+MindX is an idea capturing tool that uses AI to auto tag any kind of bookmark!
 
 TODO
 
